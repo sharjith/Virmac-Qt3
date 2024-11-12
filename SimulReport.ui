@@ -1,0 +1,246 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>SimulReportDlg</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>SimulReportDlg</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>173</width>
+            <height>451</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Simulation Report</string>
+    </property>
+    <property name="icon">
+        <pixmap>image0</pixmap>
+    </property>
+    <property name="sizeGripEnabled">
+        <bool>true</bool>
+    </property>
+    <vbox>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <property name="margin">
+            <number>5</number>
+        </property>
+        <property name="spacing">
+            <number>5</number>
+        </property>
+        <widget class="QGroupBox">
+            <property name="name">
+                <cstring>groupBox1</cstring>
+            </property>
+            <property name="frameShape">
+                <enum>GroupBoxPanel</enum>
+            </property>
+            <property name="frameShadow">
+                <enum>Sunken</enum>
+            </property>
+            <property name="title">
+                <string>G-Code File</string>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLabel" row="0" column="0">
+                    <property name="name">
+                        <cstring>textLabelFileName</cstring>
+                    </property>
+                    <property name="frameShape">
+                        <enum>StyledPanel</enum>
+                    </property>
+                    <property name="text">
+                        <string>..</string>
+                    </property>
+                </widget>
+            </grid>
+        </widget>
+        <widget class="QGroupBox">
+            <property name="name">
+                <cstring>groupBox2</cstring>
+            </property>
+            <property name="title">
+                <string>Tool Data</string>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLabel" row="0" column="0">
+                    <property name="name">
+                        <cstring>textLabelToolDia</cstring>
+                    </property>
+                    <property name="frameShape">
+                        <enum>StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                        <enum>Plain</enum>
+                    </property>
+                    <property name="text">
+                        <string>..</string>
+                    </property>
+                </widget>
+            </grid>
+        </widget>
+        <widget class="QGroupBox">
+            <property name="name">
+                <cstring>groupBox3</cstring>
+            </property>
+            <property name="title">
+                <string>Rapid Feed Rate</string>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLabel" row="0" column="0">
+                    <property name="name">
+                        <cstring>textLabelRapid</cstring>
+                    </property>
+                    <property name="frameShape">
+                        <enum>StyledPanel</enum>
+                    </property>
+                    <property name="text">
+                        <string>..</string>
+                    </property>
+                </widget>
+            </grid>
+        </widget>
+        <widget class="QGroupBox">
+            <property name="name">
+                <cstring>groupBox4</cstring>
+            </property>
+            <property name="title">
+                <string>Total Path Length</string>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLabel" row="0" column="0">
+                    <property name="name">
+                        <cstring>textLabelPathLen</cstring>
+                    </property>
+                    <property name="frameShape">
+                        <enum>StyledPanel</enum>
+                    </property>
+                    <property name="text">
+                        <string>..</string>
+                    </property>
+                </widget>
+            </grid>
+        </widget>
+        <widget class="QGroupBox">
+            <property name="name">
+                <cstring>groupBox5</cstring>
+            </property>
+            <property name="title">
+                <string>Total Cutting Time</string>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLabel" row="0" column="0">
+                    <property name="name">
+                        <cstring>textLabelCuttingTime</cstring>
+                    </property>
+                    <property name="frameShape">
+                        <enum>StyledPanel</enum>
+                    </property>
+                    <property name="text">
+                        <string>..</string>
+                    </property>
+                </widget>
+            </grid>
+        </widget>
+        <spacer>
+            <property name="name">
+                <cstring>spacer2</cstring>
+            </property>
+            <property name="orientation">
+                <enum>Vertical</enum>
+            </property>
+            <property name="sizeType">
+                <enum>Expanding</enum>
+            </property>
+            <property name="sizeHint">
+                <size>
+                    <width>20</width>
+                    <height>30</height>
+                </size>
+            </property>
+        </spacer>
+        <widget class="QLayoutWidget">
+            <property name="name">
+                <cstring>layout4</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer2_2</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>63</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>buttonOk</cstring>
+                    </property>
+                    <property name="text">
+                        <string>&amp;OK</string>
+                    </property>
+                    <property name="accel">
+                        <string></string>
+                    </property>
+                    <property name="autoDefault">
+                        <bool>true</bool>
+                    </property>
+                    <property name="default">
+                        <bool>true</bool>
+                    </property>
+                    <property name="iconSet">
+                        <iconset>image1</iconset>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+    </vbox>
+</widget>
+<images>
+    <image name="image0">
+        <data format="PNG" length="1624">89504e470d0a1a0a0000000d49484452000000300000003008060000005702f9870000061f494441546881d5995b4c54471cc67f2005cad5cbda5d97ad6c95cb52b5520d140f1bb58d698c346d22893ef8d04449137db1265e1a926a6afa049af6a54f5d8c696cc3838025a651538c36705a536934d2763154b78a29dab5acacdc143c7d983dec5976cf72f682c4ef69737632f3ff66bef9ffbf99499165991719a9731d40a278e109a44dffb05392943ac004b80117d02ecb29cf3b30a3082360016a013b7019688eb363698ba4e0003c20b7cede04cc9e841c4023e09cb51180082b900c48272485234039b017a47649c105727bfc2b71429214752e5c404340d6492530259b23c0e6c0472790037840aa97147c801be48bb19171021f067e5fd27c4fee0aa8b229d7f93e015c01f6276fc8a80494183a0a914d33d0a5f9d301ec42a4b64ce04b900e4a8adc90f8e68e4ac048ef21b2a9027a8016e09ca6513922ad6d2098e6cec6116d04249e85b4d9c60d1c003aa7b5712364d345d291108130d97c065c031e4f6b68073e0656a34f324ec4b5890dc9468503919176003ee03c702a79c52dbe2ca4cd363d8819bda6d3b60e11bc09380e9c02bc718d1a113167a130d9b41059360e44f01f2066fe387026f2cc4b27240513c453ec0c67213dd9c887c5803b6b6a144b46068c8ee27e7584814d4fc364c3006c59bf5e716467939997872f5fc1bde03ed423b29307a4ad92128bbc8c4b6806d9d4ad5841add90c1e0f0776dfe274cd6044d938b2b3692c29c1b6762d57de1c677f751bfd853e114923b0cf7044c609e8c946be109c29537939f68202e8e9c13e3282c50ddeef61e22c301020b97d3bb5562be51d1db415fd4cebc6a73cb28f427aa0131bc276248dc07cc4ccd71251365ab80b47e9b6fb589afa90923b9954f8b3b9f4dd23fc0f26a7da388b8b79c75ec0d04fad7498fb399f3bc97837f004c80f8ce500698fa418f54bd109c4906d5c0b5ab9b1741e7b8a0679fbde1a16decee6dad8aff8190e36ba799321bcfc56e2a7df3ac9b8079e1d04fa0313d488b01c760cfba5a8854cc9442caba64869650320ed9414499614ef86410617a7f3cac66dd87c39540fbdc417f59fe2acaac2515acab18606caf352f1f4fd4847e563ee9e8767470313e24158cc7d8842b78129bf941081141fc23d06641329f8a9223501e91e13a6959bc99c978de5c9136a2b2b295ab2845c53262b3615909531c8b8df4bc6eb6b48735b44e153d3ef00701af88ba05f2a9a29fc99ac84ea61f4ca7e1d7008916d9a80af72c1fa0698cd303c0cddddf0e00177877bf9fae6216ef8bb28c875b07b7903abf2aa678ece00c2f6806a5572808131f0f6832c4798f90845caedefe3c0e1a3ec4d4dc569b5425717bc7b9797178fb1eccf7e6cb915fc3752c8b79fbbe8fee57ae8c06ae1ab0e04d18498b88f6224d03ac30d44886ca615a901ee73baad8df7b66dc369b3414707b9ef3fa47019545e4e6569f16a7a7316d1dad484c7abf11309f8a5d8bd90116f535606562bb4b551f8c728e9be542aaea7635ae7a0779119323262ef3351027ab2518b94162ef3596e156751b3dc8bf34a1ae9997958f20b3879e1222da3a3787d3ed13006bf94108168b20941a0f075bed6cd98398baa5505bc75e1110bc7b3415a49d7d5ab9cebed0d066f4036aa07fb64235c0e5c080c8cc548c0f0126b0a5f96bf8065eb7690df7d0e0687a0a202eedc0195408c7dba6cd01cb810f0f607ff4e89763b1d229b0944663803f4e990ac451c2d9bc1d2311fe7bfa5e4fcfe378c8f4359199db76fd397ff0f91fa94bfd1b1d99a3e69013a438ba9ee0ac42a9be97ea9f5f00f61019dd4e9534f367ad65d0b7d09c5219ba49dce62e8539fc019c412ef422c771ae24e4f3ba02a9b28361bf43398eee96c06eb6e8880dc20a748f592c276840627031d7a89c966eb493111d918221015732c1b2da213508dd15ea0143886708f66e654368609a88349ed0129d520ee367dcca96c0c1398820b71e868441c70d4959923d96811b59069216d9594a9bbfe01c20a0ae817be788b941118dec43319ace7291b2d92f7c0f11c65a345c204426463097cd4163e6ddb04b28d1e125f01f5e6e21e22c53a087f17537188a4c8468bc409a807ff3482773b3642dfc55498488a6cb4309c858c20245369dfc554b8883bdbe821a9af94da8c23ed9114ec04f705244d365accca4337102a2d15497cd850f13ff934e127bfdb472c0000000049454e44ae426082</data>
+    </image>
+    <image name="image1">
+        <data format="PNG" length="845">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af400000314494441545885edd73f6814691cc6f1ef3befbb18cd0c9a468829568201858314dbbdd1dc468bc46c61ba158e6871580847b8889246c1e28e5338cea02258f8f7ae31a2063591238a87c594bab74123fe2301a304d770f1dc4d4cf69dd7623104c4d9d55d4961a67d99793ef3fb3d538cf07d9fc5bc9c454d5f027c0d80d6da6aadeda2016aa3b51c3873805211aa92e15a6b7be2f60962f1187eca476b6d7ddf1761f7547402cddb9a89c5630c67d2dcff3e8d5a5bfcfd2a06684db4daeede6e004e8e9cc4c880955d5ed1555404a0b5b6c9ae246bd6aee1f2d8259e641f13c800679dc0fdb13a14511140436303bb0eeee26dfe2de7c6ce62a4c128839101551dcb887cf7e955945dc20fc50338f6ec2853f60d8e72b006acb05863b121352c1b90d89920168f71f7cd5daebf1e402a076b2c080bc621f7fb0cf9e1fcd701b4265aed95675700e81def2550068cc5110e18983d37c7dc509eb04f3114a0b5b6b5d15a5e8ebdfce8215a6bdb7da41b6f95477fa69fe7ef9e23a4831101d680190c30674d68381429a157e3d13fda4ff3b6e68fce1a1a1bd8fef3767226c7d5cc553ce5e14a97888c10fc1b607e2d1e5e14d0bea39dc006741cefa02dd936ff2969adedee3f76933559fa5ef52185c4952eae74a97a5285dd6b4b0a0f0568ad6de2a70453f92966ab67499e4fb2b97db30568e96c21da14e541f6018f728f70a58b273d56e45690db93c3ffbbb47008e9c0864d1b88d44598989b60b95c4e7d633d6dbfb4b165eb167bf8fe6126e7264967d378ca431905ffc3c39d0fb9d377a7e4f05040fdc67a26f39378b2b05b89a4e9872656475733533d43e65d0660fe2cd593e2d6e95b9f150e212b18f86d00ff2f9f1a555340a8c28ed76f5acf74304d6083f9d1a7f6a698189af8dc6c206402beef0badb5ad5b5647bc338e141285420a89149269338d1492910b233cbdf8b4e4d2950c58887084434b670b9242b8120a2514f7febcc78dae1b5f1c5e14b01091fa27c5bed3fb50a63085f1e171aeedbf5656784980850821043da77a184d8f7268eb216e0ede2c2bbc64c04244f6bf2c2f465f3034385476388058fa335a027cf380f78483411950f3e5440000000049454e44ae426082</data>
+    </image>
+</images>
+<connections>
+    <connection>
+        <sender>buttonOk</sender>
+        <signal>clicked()</signal>
+        <receiver>SimulReportDlg</receiver>
+        <slot>accept()</slot>
+    </connection>
+</connections>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

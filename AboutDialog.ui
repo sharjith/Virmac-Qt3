@@ -1,0 +1,93 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>AboutDialog</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>AboutDialog</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>415</width>
+            <height>473</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>About Virmac</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QLayoutWidget" row="0" column="0">
+            <property name="name">
+                <cstring>layout2</cstring>
+            </property>
+            <vbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>pixmapLabel1</cstring>
+                    </property>
+                    <property name="pixmap">
+                        <pixmap>splash_small.png</pixmap>
+                    </property>
+                    <property name="scaledContents">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>textLabel2</cstring>
+                    </property>
+                    <property name="text">
+                        <string>&lt;font size="+1"&gt;&lt;p align="center"&gt;Virmac&lt;/p&gt;&lt;font size="+1"&gt;&lt;font size="+1"&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;</string>
+                    </property>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>textLabel1</cstring>
+                    </property>
+                    <property name="text">
+                        <string>&lt;p align="center"&gt;&lt;font size="+1"&gt;MultiAxis Milling Simulator&lt;font size="+1"&gt;&lt;/font&gt;&lt;/font&gt;&lt;br&gt;
+Copyright© 2002-2006 N. Sharjith&lt;br&gt;
+&lt;u&gt;sharjith@gmail.com&lt;/u&gt;&lt;/p&gt;</string>
+                    </property>
+                    <property name="alignment">
+                        <set>AlignVCenter</set>
+                    </property>
+                </widget>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>pushButton1</cstring>
+                    </property>
+                    <property name="text">
+                        <string>&amp;Ok</string>
+                    </property>
+                    <property name="accel">
+                        <string>Alt+O</string>
+                    </property>
+                </widget>
+            </vbox>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>pushButton1</sender>
+        <signal>clicked()</signal>
+        <receiver>AboutDialog</receiver>
+        <slot>close()</slot>
+    </connection>
+</connections>
+<includes>
+    <include location="local" impldecl="in implementation">AboutDialog.ui.h</include>
+</includes>
+<functions>
+    <function>init()</function>
+</functions>
+<pixmapinproject/>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>
